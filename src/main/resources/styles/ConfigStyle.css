@@ -1,0 +1,19 @@
+.optionText {
+    -fx-font: 42px "Javanese Text";
+}
+
+.inputText {
+    -fx-font: 30px "Javanese Text";
+    -fx-text-fill: white;
+    -fx-background-color: gray;
+}
+
+
+.combo-box .list-cell {
+    -fx-text-fill: white;
+}
+
+.combo-box .combo-box-popup .list-view .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: #444444;
+}

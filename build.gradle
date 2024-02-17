@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+version '1.00'
+mainClassName = "core.GameDriver"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    testImplementation "org.testfx:testfx-core:4.0.+"
+    testImplementation "org.testfx:testfx-junit:4.0.+"
+}
+
+javafx {
+    version = "15.0.1"
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media' ]
+}
+
+test {
+    systemProperty "testfx.robot.write_sleep", "0"
+    systemProperty "glass.win.uiScale", "100%"
+}
+
+run {
+    // Try to convert this from a system property to code
+    systemProperty "glass.win.uiScale", "100%"
+}

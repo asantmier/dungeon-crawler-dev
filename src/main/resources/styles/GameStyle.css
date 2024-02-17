@@ -1,0 +1,23 @@
+.uiInfoText {
+    -fx-font: 30px "Sylfaen";
+    -fx-padding: 20 20 20 20;
+}
+
+.minimap {
+     -fx-font: 20px "Consolas";
+    -fx-padding: 20 20 20 20;
+}
+
+.minimap .text {
+     -fx-text-alignment: right;
+     -fx-line-spacing: -10px;
+}
+
+.minimap .scroll-pane {
+        -fx-vbar-policy: never;
+        -fx-hbar-policy: never;
+}
+
+.text-area, .text-area .viewport, .text-area .content {
+    -fx-background-color: transparent;
+}
